@@ -1,0 +1,6 @@
+.vs/
+collected_static/
+*.log
+log/
+*.pyc
+

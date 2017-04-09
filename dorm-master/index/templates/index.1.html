@@ -1,0 +1,96 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<meta name="theme-color" content="#607d8b">
+
+	<!--Import Google Icon Font-->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="{% static "css/materialize.min.css" %}" media="screen,projection " />
+
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport " content="width=device-width, initial-scale=1.0 " />
+	<title>智能宿舍</title>
+</head>
+
+<body>
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="{% static "js/materialize.min.js" %}"></script>
+
+	<header>
+		<div class="navbar-fixed">
+			<nav class="top-nav blue-grey darken-1">
+				<div class="nav-wrapper container">
+					<a href="/index/" class="brand-logo">Dorm</a>
+					<ul class="right hide-on-med-and-down">
+						<li><a href="">登陆</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+
+	<div class="row container">
+		<div class="col s12 m6 l4">
+			<div class="card blue darken-1 hoverable">
+				<div class="card-content white-text">
+					<span class="card-title">开灯</span>
+					<p>Turn on the light.</p>
+				</div>
+				<div class="card-action blue darken-2">
+					<a href="#" class="white-text">开灯</a>
+					<a href="#" class="white-text">关灯</a>
+				</div>
+			</div>
+		</div>
+		<div class="col s12 m6 l4">
+			<div class="card green lighten-1 hoverable">
+				<div class="card-content white-text">
+					<span class="card-title">开锁</span>
+					<p>Unlock your door.</p>
+				</div>
+				<div class="card-action green">
+					<a href="#" class="white-text">开锁</a>
+				</div>
+			</div>
+		</div>
+		<div class="col s12 m6 l4">
+			<div class="card grey darken-1 hoverable">
+				<div class="card-content white-text">
+					<span class="card-title">查询温度</span>
+					<p>Check the temperature.</p>
+				</div>
+				<div class="card-action grey darken-2">
+					<a href="#" class="white-text">查询</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row container">
+		<div class="col s12 m6 l4">
+			<div class="card hoverable">
+				<div class="card-content">
+					<span class="card-title">查询数据库</span>
+					<p>Query the database.</p>
+				</div>
+				<div class="card-action grey lighten-4">
+					<a href="/queryall/">查询所有</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
