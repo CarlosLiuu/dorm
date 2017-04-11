@@ -1,7 +1,7 @@
 @charset "utf-8";
 /*------------// Overall //------------------*/
 body{font:12px/180% Arial,Helvetica,Verdana;color:#5a5a5a; margin:0; background:#FFF;}
-body.login{ background:url(site_bg.png);}
+body.login{ background:url(login_bgx.gif);}
 table,td{font:12px/180% Arial, "宋体",Helvetica, sans-serif,Verdana; color:#58595b;}
 table{border-collapse:collapse; border-spacing:0; empty-cells:show; }
 th, td { border-collapse:collapse; }
@@ -26,9 +26,9 @@ html{-webkit-text-size-adjust:none;}
 #nav{ float:right; margin-right:24px; padding-top:12px;}
 #nav ul li{ float:left; width:55px; height:20px; margin-right:8px; line-height:20px; text-align:center; font-size:13px;}
 #nav ul li a{ display:block; color:#656565;  height:20px;}
-#nav ul li a:hover{ background:url(../images/site_bg.png) no-repeat; color:#FFF;}
-#nav ul li.local a{background:url(../images/site_bg.png) no-repeat; color:#FFF; }
-.top_bg_c{ background:url(../images/site_bg.png);}
+#nav ul li a:hover{ background:url(../images/login_m_bg.png) no-repeat; color:#FFF;}
+#nav ul li.local a{background:url(../images/login_m_bg.png) no-repeat; color:#FFF; }
+.top_bg_c{ background:url(../images/top_bg.gif);}
 .main_area{ margin-top:45px;}
 .index_left{ width:520px; float:left; }
 .index_right{ width:412px; float:right; margin-right:26px; padding-top:23px;}
@@ -122,16 +122,23 @@ html{-webkit-text-size-adjust:none;}
 .login_m{ width:403px; margin:0 auto; height:375px; margin-top:98px; /*position: absolute;left:50%;top:50%;margin-left:-202px;margin-top:-188px;*/}
 .login_logo{ text-align:center; margin-bottom:25px;}
 .login_boder{ background: url(login_m_bg.png) no-repeat; height:302px; overflow:hidden;}
+.regist_boder{ background: url(regist_m_bg.png) no-repeat; height:350px; overflow:hidden;}
 .login_padding{ padding:28px 47px 20px 47px ;}
 .login_boder h2{ color:#4f5d80; text-transform:uppercase; font-size:12px; font-weight:normal; margin-bottom:11px;}
 .forget_model_h2{color:#4f5d80; font-size:12px; font-weight:normal; margin-bottom:11px;}
 
-.login_boder input.txt_input{ width:295px; height:36px; border:1px solid #cad2db; background:url({% static "../images/login_m_bg.png" %}) no-repeat;  padding:0 5px; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; line-height:36px; margin-bottom:10px; font-size:14px; color:#717171; font-family:Arial;}
+.login_boder input.txt_input{ width:295px; height:36px; border:1px solid #cad2db; background:url(../images/txt_input_bg.gif) no-repeat;  padding:0 5px; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; line-height:36px; margin-bottom:10px; font-size:14px; color:#717171; font-family:Arial;}
 .login_boder input.txt_input2{ margin-bottom:20px;}
 .login_boder input.txt_input:focus{ transition:border linear .2s,box-shadow linear .2s; -moz-transition:border linear .2s,-moz-box-shadow linear .2s; -webkit-transition:border linear .2s,-webkit-box-shadow linear .2s; outline:none;border-color:rgba(173,173,173.75); box-shadow:0 0 8px rgba(173,173,173,.5); -moz-box-shadow:0 0 8px rgba(173,173,173,.5); -webkit-box-shadow:0 0 8px rgba(173,173,173,3); border:1px solid #6192c8;}
 .login_boder p.forgot{ font-size:11px;  text-align:right; margin-bottom:15px;}
 .login_boder p.forgot a,.login_boder p.forgot a:visited{color:#8c8e91;}
 .login_boder p.forgot a:hover{color:#206fd5;}
+.regist_boder input.txt_input{ width:295px; height:36px; border:1px solid #cad2db; background:url(../images/txt_input_bg.gif) no-repeat;  padding:0 5px; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; line-height:36px; margin-bottom:10px; font-size:14px; color:#717171; font-family:Arial;}
+.regist_boder input.txt_input2{ margin-bottom:20px;}
+.regist_boder input.txt_input:focus{ transition:border linear .2s,box-shadow linear .2s; -moz-transition:border linear .2s,-moz-box-shadow linear .2s; -webkit-transition:border linear .2s,-webkit-box-shadow linear .2s; outline:none;border-color:rgba(173,173,173.75); box-shadow:0 0 8px rgba(173,173,173,.5); -moz-box-shadow:0 0 8px rgba(173,173,173,.5); -webkit-box-shadow:0 0 8px rgba(173,173,173,3); border:1px solid #6192c8;}
+.regist_boder p.forgot{ font-size:11px;  text-align:right; margin-bottom:15px;}
+.regist_boder p.forgot a,.regist_boder p.forgot a:visited{color:#8c8e91;}
+.regist_boder p.forgot a:hover{color:#206fd5;}
 .rem_sub input.sub_button{ float:right; width:122px; height:32px; background:url(site_bg.png) no-repeat -153px -850px; border:none; color:#FFF; padding-bottom:2px; font-size:14px; font-weight:bold;}
 
 .rem_sub input.sub_buttons{ float:left; width:122px;  height:32px; background:url(site_bg.png) no-repeat -153px -850px; border:none; color:#FFF; padding-bottom:2px; font-size:14px; font-weight:bold;}

@@ -11,7 +11,10 @@
             for(var i=secs;i>=0;i--) {
                 window.setTimeout('doUpdate(' + i + ')', (secs-i) * 1000);}}
                 function doUpdate(num) {
-                    document.getElementById('ShowDiv').innerHTML = '{{ error }},'+num+'秒后自动跳转至注册页面' ;
+                    if({{ flag }}==1)
+                        document.getElementById('ShowDiv').innerHTML = '注册成功，'+num+'秒后自动跳转至登录页面' ;
+                    else
+                    document.getElementById('ShowDiv').innerHTML = '{{ error }},'+num+'秒后自动跳转至原页面' ;
                     if(num == 0) { window.location = URL; }}
     </script>
 </head>
