@@ -1,0 +1,31 @@
+{% extends "base_with_cards.html" %} {% block card_content %}
+<div class="col s12 m12 l12">
+	<div class="card">
+		<table class="highlight container centered">
+			<thead>
+				<tr>
+					<th>设备ID</th>
+					<th>设备种类</th>
+					<th>状态</th>
+					<th>时间</th>
+					<th>路由表</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for dorm in dorm %}
+				<tr>
+					<td>{{ dorm.devID }}</td>
+					<td>{{ dorm.devName }}</td>
+					<td>{{ dorm.devStatus }}</td>
+					<td>{{ dorm.time }}</td>
+					<td>{{ dorm.relay }}</td>
+				</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+		<a class="btn-floating btn-large halfway-fab waves-effect waves-light red" href="/deletedata/">
+			<i class="material-icons">delete</i>
+		</a>
+	</div>
+</div>
+{% endblock card_content %}
